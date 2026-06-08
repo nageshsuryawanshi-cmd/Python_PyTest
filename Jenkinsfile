@@ -5,7 +5,6 @@ pipeline {
         stage('UI Testing Stage') {
             agent { label 'UI-Testing' }
             steps {
-                cleanWs()
                 checkout scm
                 script {
                     sh '''
@@ -32,7 +31,6 @@ pipeline {
         stage('API Testing Stage') {
             agent { label 'API-Testing' }
             steps {
-                cleanWs()
                 checkout scm
                 script {
                     sh '''
@@ -59,7 +57,6 @@ pipeline {
         stage('Performance Testing Stage') {
             agent { label 'Perf-Testing' }
             steps {
-                cleanWs()
                 checkout scm
                 script {
                     sh '''
@@ -86,7 +83,6 @@ pipeline {
         stage('Security Testing Stage') {
             agent { label 'Sec-Testing' }
             steps {
-                cleanWs()
                 checkout scm
                 script {
                     sh '''
@@ -113,7 +109,6 @@ pipeline {
         stage('Database Testing Stage') {
             agent { label 'DB-Testing' }
             steps {
-                cleanWs()
                 checkout scm
                 script {
                     sh '''
