@@ -20,7 +20,6 @@ pipeline {
                 always {
                     publishHTML([
                         allowMissing: true,
-                        failOnError: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'reports',
@@ -48,7 +47,6 @@ pipeline {
                 always {
                     publishHTML([
                         allowMissing: true,
-                        failOnError: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'reports',
@@ -76,7 +74,6 @@ pipeline {
                 always {
                     publishHTML([
                         allowMissing: true,
-                        failOnError: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'reports',
@@ -104,7 +101,6 @@ pipeline {
                 always {
                     publishHTML([
                         allowMissing: true,
-                        failOnError: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'reports',
@@ -132,7 +128,6 @@ pipeline {
                 always {
                     publishHTML([
                         allowMissing: true,
-                        failOnError: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'reports',
